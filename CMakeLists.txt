@@ -22,6 +22,8 @@ mark_as_advanced(AC_DICT_COCOA_BUILD_TESTS AC_DICT_COCOA_BUILD_EXAMPLES)
 #######################################
 # packages
 
+include(ac_build_prj_util)
+
 add_ac_local(0.1.1)
 
 #######################################
@@ -31,5 +33,5 @@ add_subdirectory(code)
 
 if(AC_DICT_COCOA_BUILD_TESTS)
     enable_testing()
-    # add_subdirectory(test)
+    add_subdirectory(test)
 endif()
